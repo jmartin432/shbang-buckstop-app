@@ -1,0 +1,16 @@
+body {
+
+}
+
+#team-select-div, #name-select-div{
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+#start-button{
+    margin: 30px;
+    display: block;
+}

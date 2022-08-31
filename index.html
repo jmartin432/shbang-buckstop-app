@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sh'Bang Buckstop App</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script src="js/vendor/modernizr.js"></script>
+</head>
+<body class="page-home">
+
+    <header class="site-header">
+        <h1 class="title">Sh'Bang Volunteers</h1>
+        <p>Thank you for all of your hard work. Sh'Bang couldn't happen without you!</p>
+    </header>
+    <nav class="site-nav">
+        <button type="button" id="start-button" onclick="refreshAll()">Click Here to Get Started</button>
+    </nav>
+    <section id="team-section">
+        <div id="team-select-div">
+            <select name="team-select" id="team-select" class="hidden" onchange="refreshTeamInfo(this.options[this.selectedIndex].value)">
+                <option value="" disabled selected>Choose Your Team</option>
+            </select>
+        </div>
+        <div id="team-info-div">
+            <div id="buckstop-info-div">
+                <ul id="buckstop-list">
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="volunteer-section">
+        <div id="name-select-div">
+            <select name="name-select" id="name-select" class="hidden" onchange=refreshSchedule(this.options[this.selectedIndex].value)>
+                <option value="" disabled selected>Choose Your Name</option>
+            </select>
+        </div>
+
+        <div id="volunteer-info-div">
+            <div id="schedule-info-div">
+                <ul id="schedule-list">
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<section class="schedule-display">
+</section>
+
+<script src="./js/index.js"></script>
+</body>
+</html>
