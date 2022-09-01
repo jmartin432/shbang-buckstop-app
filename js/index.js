@@ -1,6 +1,6 @@
 async function callLambda(type, options) {
     console.log('calling lambda', type, options)
-    const url = 'https://fntikl9sah.execute-api.us-east-1.amazonaws.com/prod/{proxy+}';
+    const url = 'https://vpwpr9xkud.execute-api.us-east-1.amazonaws.com/prod/{proxy+}';
     const fetchLambda = await fetch(url, {
         method: 'POST',
         body: JSON.stringify({
